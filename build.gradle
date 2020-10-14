@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'idea'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+def vertxVersion = '3.9.3' //works fine with '4.0.0-milestone5'
+
+dependencies {
+    implementation "io.vertx:vertx-lang-groovy:$vertxVersion"
+}
